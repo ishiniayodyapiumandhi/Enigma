@@ -1,0 +1,27 @@
+# Ignore the specific dataset file requested
+/data/raw/Dementia Prediction Dataset.csv
+
+# Common Python ignores
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+.env
+.venv/
+env/
+venv/
+/.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Model artifacts and data
+/models/
+/data/processed/

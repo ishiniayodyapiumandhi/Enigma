@@ -1,0 +1,45 @@
+# Model Parameters
+models:
+  logistic_regression:
+    C: 1.0
+    penalty: 'l2'
+    solver: 'liblinear'
+    random_state: 42
+    
+  random_forest:
+    n_estimators: 100
+    max_depth: 10
+    min_samples_split: 2
+    min_samples_leaf: 1
+    random_state: 42
+    
+  xgboost:
+    n_estimators: 100
+    max_depth: 6
+    learning_rate: 0.1
+    random_state: 42
+
+# Preprocessing
+preprocessing:
+  test_size: 0.2
+  random_state: 42
+  cv_folds: 5
+
+# Feature Engineering
+features:
+  numerical:
+    - 'NACCAGE'
+    - 'EDUC'
+    - 'SMOKYRS'
+  
+  categorical:
+    - 'SEX'
+    - 'RACE'
+    - 'MARISTAT'
+    - 'LIVSITUA'
+    - 'RESIDENC'
+  
+  binary:
+    - 'HYPERT'
+    - 'DEP'
+    - 'STROKE'
